@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image</title>
+</head>
+<style>
+    .image-gallery{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .image-gallery img {
+ width: 30%;
+ margin: 10px;
+ }
+ @media screen and (max-width : 800px) {
+    .image-gallery img{
+        width: 45%;
+    }
+ }
+ @media screen and (max-width : 500px) {
+    .image-gallery img{
+        width: 100%;
+    }
+ }
+</style>
+<body>
+    <div class="image-gallery">
+        <img src="img.jpg" alt="1">
+        <img src="img.jpg" alt="2">
+        <img src="img.jpg" alt="3">
+    </div>
+</body>
+</html>
